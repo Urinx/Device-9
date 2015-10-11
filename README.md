@@ -5,8 +5,6 @@ It's a iOS App for real-time monitoring of the network speed, IP address, memory
 
 ![icon](Screenshots/icon.png)
 
-支持设备：5s + & iOS 9.1 + 下载地址：http://pre.im/cctv
-
 Device Support: 5s + & iOS 9.1 + Download: http://pre.im/cctv
 
 ### 我只想静静地看看截图 / Screenshots
