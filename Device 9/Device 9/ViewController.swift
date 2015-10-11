@@ -51,11 +51,11 @@ class ViewController: UIViewController {
         shareCBtn.addTarget(self, action: "shareC", forControlEvents: .TouchUpInside)
         
         // chart
-        let series1 = ChartSeries([10,32,43,54,14,43,54])
+        let series1 = ChartSeries(random(10, 60, arrLen: 7))
         series1.color = ChartColors.cyanColor()
         series1.area = true
         
-        let series2 = ChartSeries([4.5,2.3,3.4,5.4,1.4,4.3,2.3])
+        let series2 = ChartSeries(random(1, 10, arrLen: 7))
         series2.color = ChartColors.redColor()
         series2.area = true
         
@@ -67,6 +67,20 @@ class ViewController: UIViewController {
         
     }
     
+    func random(a: UInt32, _ b: UInt32) -> Float? {
+        guard a < b else { return nil }
+        return Float(arc4random_uniform(b - a) + a)
+    }
+    
+    func random(a: UInt32, _ b: UInt32, arrLen: Int) -> Array<Float> {
+        guard a < b else { return [] }
+        var arr = [Float]()
+        for _ in 0..<arrLen {
+            arr.append(random(a, b)!)
+        }
+        return arr
+    }
+    
     func shareF() {
         weixinShare(WXSceneSession)
     }
@@ -76,18 +90,24 @@ class ViewController: UIViewController {
     }
     
     func weixinShare(scene: WXScene) {
-        let message =  WXMediaMessage()
-        message.title = "今生我消耗了\(totalStr)的流量，不服來戰！"
-        message.description = "超用心的誠意之作，讓通知中心變得從來沒有這麼好用"
-        message.setThumbImage(UIImage(named: "d9"))
-        let ext =  WXWebpageObject()
-        ext.webpageUrl = AppDownload
-        message.mediaObject = ext
-        let req =  SendMessageToWXReq()
-        req.bText = false
-        req.message = message
-        req.scene = Int32(scene.rawValue)
-        WXApi.sendReq(req)
+        if WXApi.isWXAppInstalled() {
+            let message =  WXMediaMessage()
+            message.title = "今生我消耗了\(totalStr)的流量，不服來戰！"
+            message.description = "超用心的誠意之作，讓通知中心變得從來沒有這麼好用"
+            message.setThumbImage(UIImage(named: "d9"))
+            let ext =  WXWebpageObject()
+            ext.webpageUrl = AppDownload
+            message.mediaObject = ext
+            let req =  SendMessageToWXReq()
+            req.bText = false
+            req.message = message
+            req.scene = Int32(scene.rawValue)
+            WXApi.sendReq(req)
+        } else {
+            let alert = UIAlertController(title: "Share Fail", message: "Wechat app is not installed!", preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {

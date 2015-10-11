@@ -1,0 +1,165 @@
+
+/* Class = "UILabel"; text = "MB"; ObjectID = "1AE-OZ-OFH"; */
+"1AE-OZ-OFH.text" = "MB";
+
+/* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "2mb-93-npE"; */
+"2mb-93-npE.footerTitle" = " ";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "2mb-93-npE"; */
+"2mb-93-npE.headerTitle" = " ";
+
+/* Class = "UILabel"; text = "开发者："; ObjectID = "3FG-8k-xJC"; */
+"3FG-8k-xJC.text" = "开发者：";
+
+/* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "4hM-wT-IyM"; */
+"4hM-wT-IyM.footerTitle" = " ";
+
+/* Class = "UIButton"; normalTitle = "朋友圈"; ObjectID = "5A3-NS-fMd"; */
+"5A3-NS-fMd.normalTitle" = "朋友圈";
+
+/* Class = "UILabel"; text = "Moi - 天気予報"; ObjectID = "5gf-wo-1Le"; */
+"5gf-wo-1Le.text" = "Moi - 天気予報";
+
+/* Class = "UILabel"; text = "结算日期"; ObjectID = "71y-oM-C36"; */
+"71y-oM-C36.text" = "结算日期";
+
+/* Class = "UILabel"; text = "有生之年"; ObjectID = "8j2-rd-sig"; */
+"8j2-rd-sig.text" = "有生之年";
+
+/* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "9Ja-fI-ZLp"; */
+"9Ja-fI-ZLp.footerTitle" = " ";
+
+/* Class = "UILabel"; text = "的數據"; ObjectID = "9Y7-qp-I6k"; */
+"9Y7-qp-I6k.text" = "的數據";
+
+/* Class = "UILabel"; text = "Iconista"; ObjectID = "ArK-gE-a5t"; */
+"ArK-gE-a5t.text" = "Iconista";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "Asu-po-taS"; */
+"Asu-po-taS.headerTitle" = " ";
+
+/* Class = "UIButton"; normalTitle = "重置统计数据"; ObjectID = "C9z-VW-OQC"; */
+"C9z-VW-OQC.normalTitle" = "重置统计数据";
+
+/* Class = "UIButton"; normalTitle = "关闭"; ObjectID = "CDS-3p-8Hm"; */
+"CDS-3p-8Hm.normalTitle" = "关闭";
+
+/* Class = "UITableViewSection"; footerTitle = " "; ObjectID = "CMp-sn-Vo7"; */
+"CMp-sn-Vo7.footerTitle" = " ";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "CMp-sn-Vo7"; */
+"CMp-sn-Vo7.headerTitle" = " ";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "Idf-m9-YRm"; */
+"Idf-m9-YRm.headerTitle" = " ";
+
+/* Class = "UILabel"; text = "数据套餐"; ObjectID = "J5N-LJ-uKM"; */
+"J5N-LJ-uKM.text" = "数据套餐";
+
+/* Class = "UILabel"; text = "2. Add Device 9 & Drag it on the top"; ObjectID = "Jjc-45-Ogz"; */
+"Jjc-45-Ogz.text" = "2. Add Device 9 & Drag it on the top";
+
+/* Class = "UILabel"; text = "Vu"; ObjectID = "PdG-Rx-0Hg"; */
+"PdG-Rx-0Hg.text" = "Vu";
+
+/* Class = "UILabel"; text = "调整使用量"; ObjectID = "QgP-90-u8t"; */
+"QgP-90-u8t.text" = "调整使用量";
+
+/* Class = "UILabel"; text = "MB"; ObjectID = "Qib-G7-Psa"; */
+"Qib-G7-Psa.text" = "MB";
+
+/* Class = "UIButton"; normalTitle = "Try"; ObjectID = "R2H-0M-b24"; */
+"R2H-0M-b24.normalTitle" = "Try";
+
+/* Class = "UILabel"; text = "妳最終"; ObjectID = "RkG-0A-OdW"; */
+"RkG-0A-OdW.text" = "妳最終";
+
+/* Class = "UILabel"; text = "套餐周期"; ObjectID = "T6Z-7o-tZE"; */
+"T6Z-7o-tZE.text" = "套餐周期";
+
+/* Class = "UILabel"; text = "帮助"; ObjectID = "WKQ-9M-oGZ"; */
+"WKQ-9M-oGZ.text" = "帮助";
+
+/* Class = "UILabel"; text = "每月"; ObjectID = "WfK-n0-zX7"; */
+"WfK-n0-zX7.text" = "每月";
+
+/* Class = "UILabel"; text = "v 1.0.0"; ObjectID = "X1e-7F-weU"; */
+"X1e-7F-weU.text" = "v 1.0.0";
+
+/* Class = "UITextField"; placeholder = "1"; ObjectID = "XJA-GA-pVS"; */
+"XJA-GA-pVS.placeholder" = "1";
+
+/* Class = "UILabel"; text = "WriteTyper"; ObjectID = "Ycr-i2-Ktv"; */
+"Ycr-i2-Ktv.text" = "WriteTyper";
+
+/* Class = "UILabel"; text = "人工客服"; ObjectID = "Zv4-2b-e0T"; */
+"Zv4-2b-e0T.text" = "人工客服";
+
+/* Class = "UILabel"; text = "套餐流量"; ObjectID = "bw7-v9-Vek"; */
+"bw7-v9-Vek.text" = "套餐流量";
+
+/* Class = "UILabel"; text = "关于"; ObjectID = "cBD-Ai-5DA"; */
+"cBD-Ai-5DA.text" = "关于";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "cIR-bK-KS4"; */
+"cIR-bK-KS4.placeholder" = "0";
+
+/* Class = "UIButton"; normalTitle = "調戲妳好友"; ObjectID = "ciZ-u6-pP8"; */
+"ciZ-u6-pP8.normalTitle" = "調戲妳好友";
+
+/* Class = "UILabel"; text = "Copyright © 2015 Eular. All rights reserved."; ObjectID = "d6Y-KN-uZ9"; */
+"d6Y-KN-uZ9.text" = "Copyright © 2015 Eular. All rights reserved.";
+
+/* Class = "UILabel"; text = "0 MB"; ObjectID = "fnf-ib-5Ft"; */
+"fnf-ib-5Ft.text" = "0 MB";
+
+/* Class = "UIButton"; normalTitle = "@Urinx"; ObjectID = "gQ4-TY-sCX"; */
+"gQ4-TY-sCX.normalTitle" = "@Urinx";
+
+/* Class = "UILabel"; text = "iOS Weather App"; ObjectID = "gR4-IM-vF8"; */
+"gR4-IM-vF8.text" = "iOS Weather App";
+
+/* Class = "UIButton"; normalTitle = "好友"; ObjectID = "hfj-pR-qUK"; */
+"hfj-pR-qUK.normalTitle" = "好友";
+
+/* Class = "UILabel"; text = "了"; ObjectID = "iWZ-7z-IHb"; */
+"iWZ-7z-IHb.text" = "了";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "kzW-Pf-5KK"; */
+"kzW-Pf-5KK.headerTitle" = " ";
+
+/* Class = "UILabel"; text = "唯舞 - 街舞视频 iOS App"; ObjectID = "lBf-Bs-s0q"; */
+"lBf-Bs-s0q.text" = "唯舞 - 街舞视频 iOS App";
+
+/* Class = "UILabel"; text = "復古打字機 - Mac OS X App"; ObjectID = "mzR-3N-wy5"; */
+"mzR-3N-wy5.text" = "復古打字機 - Mac OS X App";
+
+/* Class = "UILabel"; text = "Device 9  v 1.0.0"; ObjectID = "nep-aq-xw5"; */
+"nep-aq-xw5.text" = "Device 9  v 1.0.0";
+
+/* Class = "UILabel"; text = "我们的其它作品"; ObjectID = "ocM-sP-VZu"; */
+"ocM-sP-VZu.text" = "我们的其它作品";
+
+/* Class = "UILabel"; text = "分享至"; ObjectID = "ol8-us-YQZ"; */
+"ol8-us-YQZ.text" = "分享至";
+
+/* Class = "UILabel"; text = "1. Go to Today -> Edit"; ObjectID = "pcm-Un-RP4"; */
+"pcm-Un-RP4.text" = "1. Go to Today -> Edit";
+
+/* Class = "UILabel"; text = "反馈"; ObjectID = "s1F-oe-wgT"; */
+"s1F-oe-wgT.text" = "反馈";
+
+/* Class = "UILabel"; text = "OS X下App图标美化工具"; ObjectID = "tlE-cq-BwB"; */
+"tlE-cq-BwB.text" = "OS X下App图标美化工具";
+
+/* Class = "UILabel"; text = "3. Then you can see it"; ObjectID = "vRK-kj-P5v"; */
+"vRK-kj-P5v.text" = "3. Then you can see it";
+
+/* Class = "UIButton"; normalTitle = "稱霸朋友圈"; ObjectID = "xZ8-fT-oll"; */
+"xZ8-fT-oll.normalTitle" = "稱霸朋友圈";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "yAz-z8-5cN"; */
+"yAz-z8-5cN.placeholder" = "0";
+
+/* Class = "UILabel"; text = "消耗"; ObjectID = "ys8-To-H13"; */
+"ys8-To-H13.text" = "消耗";

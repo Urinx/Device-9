@@ -42,7 +42,7 @@ class SettingTableViewController: UITableViewController {
             if indexPath.row == 0 {
                 todo = "mailto://urinx@icloud.com"
             } else if indexPath.row == 1 {
-                todo = "sms://18827359451"
+                todo = "sms://+8618827359451"
             }
             UIApplication.sharedApplication().openURL(NSURL(string: todo)!)
         }

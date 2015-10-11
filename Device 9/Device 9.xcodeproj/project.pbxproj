@@ -118,6 +118,9 @@
 		BB458F761BAAE24A00DD8F83 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		BB458F791BAAE24A00DD8F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		BB458F7B1BAAE24A00DD8F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBA34C381BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BBA34C391BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BBA34C3A1BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		BBB906781BAFC0C900B53E33 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		BBB9067A1BAFCD3400B53E33 /* DataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		BBB9067C1BAFD77500B53E33 /* Device 9.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Device 9.entitlements"; sourceTree = "<group>"; };
@@ -201,13 +204,10 @@
 		BB458F331BAADCD100DD8F83 = {
 			isa = PBXGroup;
 			children = (
-				BBB9069A1BB0562A00B53E33 /* WeChatSDK_1.5 */,
-				BBB906841BB0458C00B53E33 /* Chart */,
 				BB458F3E1BAADCD100DD8F83 /* Device 9 */,
 				BB458F531BAADCD100DD8F83 /* Device 9Tests */,
 				BB458F5E1BAADCD100DD8F83 /* Device 9UITests */,
 				BB458F751BAAE24A00DD8F83 /* Device 9 TodayExtension */,
-				BB458F721BAAE24A00DD8F83 /* Frameworks */,
 				BB458F3D1BAADCD100DD8F83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -233,12 +233,10 @@
 				BBB906781BAFC0C900B53E33 /* SettingTableViewController.swift */,
 				BBB9067A1BAFCD3400B53E33 /* DataTableViewController.swift */,
 				BB458F431BAADCD100DD8F83 /* Main.storyboard */,
-				BB458F461BAADCD100DD8F83 /* Assets.xcassets */,
-				BB458F481BAADCD100DD8F83 /* LaunchScreen.storyboard */,
-				BB458F4B1BAADCD100DD8F83 /* Info.plist */,
 				BBB9067E1BAFE4E400B53E33 /* HelpViewController.swift */,
 				BBB906801BAFFAD700B53E33 /* AboutViewController.swift */,
 				BBB906821BAFFC1400B53E33 /* WorksTableViewController.swift */,
+				BBA34C371BCA5AEB00AB1362 /* Supporting Files */,
 			);
 			path = "Device 9";
 			sourceTree = "<group>";
@@ -272,6 +270,7 @@
 				BB458F731BAAE24A00DD8F83 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BB458F751BAAE24A00DD8F83 /* Device 9 TodayExtension */ = {
@@ -289,6 +288,19 @@
 			path = "Device 9 TodayExtension";
 			sourceTree = "<group>";
 		};
+		BBA34C371BCA5AEB00AB1362 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB458F721BAAE24A00DD8F83 /* Frameworks */,
+				BBB906841BB0458C00B53E33 /* Chart */,
+				BBB9069A1BB0562A00B53E33 /* WeChatSDK_1.5 */,
+				BB458F481BAADCD100DD8F83 /* LaunchScreen.storyboard */,
+				BB458F461BAADCD100DD8F83 /* Assets.xcassets */,
+				BB458F4B1BAADCD100DD8F83 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BBB906841BB0458C00B53E33 /* Chart */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,7 +308,8 @@
 				BBB906861BB0458C00B53E33 /* ChartColors.swift */,
 				BBB906871BB0458C00B53E33 /* ChartSeries.swift */,
 			);
-			path = Chart;
+			name = Chart;
+			path = ../Chart;
 			sourceTree = "<group>";
 		};
 		BBB9069A1BB0562A00B53E33 /* WeChatSDK_1.5 */ = {
@@ -308,7 +321,8 @@
 				BB382E531BB3E1D80056ED32 /* Bridging-Header.h */,
 				BB382E541BB3E1D80056ED32 /* Bridging-Header.m */,
 			);
-			path = WeChatSDK_1.5;
+			name = WeChatSDK_1.5;
+			path = ../WeChatSDK_1.5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +577,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB458F441BAADCD100DD8F83 /* Base */,
+				BBA34C381BCA5CEE00AB1362 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -571,6 +586,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB458F491BAADCD100DD8F83 /* Base */,
+				BBA34C391BCA5CEE00AB1362 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -579,6 +595,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB458F791BAAE24A00DD8F83 /* Base */,
+				BBA34C3A1BCA5CEE00AB1362 /* zh-Hans */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";

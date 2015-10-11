@@ -1,0 +1,78 @@
+
+/* Class = "UILabel"; text = "0.0 KB/s"; ObjectID = "0Ju-gu-yhM"; */
+"0Ju-gu-yhM.text" = "0.0 KB/s";
+
+/* Class = "UILabel"; text = "IP: "; ObjectID = "0nL-bh-wqq"; */
+"0nL-bh-wqq.text" = "IP: ";
+
+/* Class = "UILabel"; text = "100 %"; ObjectID = "AMg-Kl-IHH"; */
+"AMg-Kl-IHH.text" = "100 %";
+
+/* Class = "UILabel"; text = "Unlimited"; ObjectID = "B5r-bj-Tg1"; */
+"B5r-bj-Tg1.text" = "Unlimited";
+
+/* Class = "UILabel"; text = "SSID: "; ObjectID = "H30-sL-Ani"; */
+"H30-sL-Ani.text" = "SSID: ";
+
+/* Class = "UILabel"; text = "2.43 GB"; ObjectID = "J0S-qd-LMB"; */
+"J0S-qd-LMB.text" = "2.43 GB";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Kwu-cA-nay"; */
+"Kwu-cA-nay.text" = "-";
+
+/* Class = "UILabel"; text = "System: "; ObjectID = "Ncs-p9-1zV"; */
+"Ncs-p9-1zV.text" = "System: ";
+
+/* Class = "UILabel"; text = "iOS 9.1"; ObjectID = "VKE-Ro-lnF"; */
+"VKE-Ro-lnF.text" = "iOS 9.1";
+
+/* Class = "UILabel"; text = "0.0 MB"; ObjectID = "Y99-cx-41y"; */
+"Y99-cx-41y.text" = "0.0 MB";
+
+/* Class = "UILabel"; text = "0.0 GB"; ObjectID = "aKY-dg-nlr"; */
+"aKY-dg-nlr.text" = "0.0 GB";
+
+/* Class = "UILabel"; text = "BSSID: "; ObjectID = "cUN-mm-JeP"; */
+"cUN-mm-JeP.text" = "BSSID: ";
+
+/* Class = "UILabel"; text = "0.0 MB"; ObjectID = "ckB-n6-qce"; */
+"ckB-n6-qce.text" = "0.0 MB";
+
+/* Class = "UILabel"; text = "暂时无法定位位置"; ObjectID = "cnf-rE-kiG"; */
+"cnf-rE-kiG.text" = "暂时无法定位位置";
+
+/* Class = "UILabel"; text = "IP2:"; ObjectID = "i2l-Zn-uP5"; */
+"i2l-Zn-uP5.text" = "IP2:";
+
+/* Class = "UILabel"; text = "Eular 的 iPhone"; ObjectID = "ihr-WM-QQL"; */
+"ihr-WM-QQL.text" = "Eular 的 iPhone";
+
+/* Class = "UILabel"; text = "51662BBB-30AA-45C2-945A-ED080E1415DF"; ObjectID = "lAb-Z3-l4w"; */
+"lAb-Z3-l4w.text" = "51662BBB-30AA-45C2-945A-ED080E1415DF";
+
+/* Class = "UILabel"; text = "0.0 KB/s"; ObjectID = "neF-qd-fuX"; */
+"neF-qd-fuX.text" = "0.0 KB/s";
+
+/* Class = "UILabel"; text = "wifiname"; ObjectID = "qBc-LX-2r3"; */
+"qBc-LX-2r3.text" = "wifiname";
+
+/* Class = "UILabel"; text = "33"; ObjectID = "sfr-Z1-o8u"; */
+"sfr-Z1-o8u.text" = "33";
+
+/* Class = "UILabel"; text = "a4:5e:60:bd:d1:f7"; ObjectID = "swn-6u-U0Y"; */
+"swn-6u-U0Y.text" = "a4:5e:60:bd:d1:f7";
+
+/* Class = "UILabel"; text = "UUID: "; ObjectID = "ukQ-LH-MXl"; */
+"ukQ-LH-MXl.text" = "UUID: ";
+
+/* Class = "UILabel"; text = "Phone: "; ObjectID = "whz-jM-kFg"; */
+"whz-jM-kFg.text" = "Phone: ";
+
+/* Class = "UILabel"; text = "192.168.0.1"; ObjectID = "xra-Rq-sYn"; */
+"xra-Rq-sYn.text" = "192.168.0.1";
+
+/* Class = "UILabel"; text = "30.0 ℃"; ObjectID = "xwr-cl-M0s"; */
+"xwr-cl-M0s.text" = "30.0 ℃";
+
+/* Class = "UILabel"; text = "App: "; ObjectID = "yCB-DY-k5f"; */
+"yCB-DY-k5f.text" = "App: ";
