@@ -7,20 +7,59 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 let WXCode = "wx6349772cbf442ce6"
 let AppDownload = "http://pre.im/cctv"
 let ArticleLink = "http://github.com/urinx"
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         WXApi.registerApp(WXCode)
+        
+        // Active session
+        if WCSession.isSupported() {
+            let watchSession = WCSession.defaultSession()
+            watchSession.delegate = self
+            watchSession.activateSession()
+        }
+        
+        // Register notification
+        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType(arrayLiteral: .Alert, .Badge, .Sound), categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        
         return true
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
+        let msg = message as! [String: String]
+        
+        if msg["msg"] == "get" {
+            let defaults = NSUserDefaults(suiteName: "group.device9SharedDefaults")!
+            let cellularUsed = defaults.doubleForKey("CellularUsed")
+            let wifiUsed = defaults.doubleForKey("WiFiUsed")
+            let cellularLeft = defaults.doubleForKey("CellularTotal") - cellularUsed
+            
+            replyHandler(["msg": "data", "cellularUsed": "\(cellularUsed.MB.afterPoint(1)) MB", "cellularLeft": "\(cellularLeft.MB.afterPoint(1)) MB", "wifiUsed": wifiUsed.GB > 1 ? "\(wifiUsed.GB.afterPoint(1)) GB":"\(Int(wifiUsed.MB)) MB"])
+            
+        } else if msg["share"] == "wechat" {
+            // Create a local notification
+            let localNf = UILocalNotification()
+            localNf.alertBody = "Share to friends by Wechat"
+            localNf.alertTitle = "Device 9"
+            localNf.alertAction = "alertAction"
+            localNf.fireDate = NSDate()
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(localNf)
+            
+            NSNotificationCenter.defaultCenter().postNotificationName("shareToTimeline", object: nil)
+        }
     }
     
     func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: Bool -> Void) {
@@ -52,7 +91,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-

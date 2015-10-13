@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var chart: Chart!
     @IBOutlet weak var shareFBtn: UIButton!
     @IBOutlet weak var shareCBtn: UIButton!
-
     @IBOutlet weak var dataLB: UILabel!
     let defaults = NSUserDefaults(suiteName: "group.device9SharedDefaults")!
     let deviceData = DeviceData()
@@ -64,7 +64,11 @@ class ViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"shortcutItem1:", name: "shareToFriend", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"shortcutItem2:", name: "shareToTimeline", object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"shortcutItem3:", name: "setting", object: nil)
-        
+
+        do {
+            let cellularLeft = defaults.doubleForKey("CellularTotal") - cellularUsed
+            try WCSession.defaultSession().updateApplicationContext(["msg": "data", "cellularUsed": "\(cellularUsed.MB.afterPoint(1)) MB", "cellularLeft": "\(cellularLeft.MB.afterPoint(1)) MB", "wifiUsed": wifiUsed.GB > 1 ? "\(wifiUsed.GB.afterPoint(1)) GB":"\(Int(wifiUsed.MB)) MB"])
+        } catch {}
     }
     
     func random(a: UInt32, _ b: UInt32) -> Float? {

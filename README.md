@@ -5,13 +5,11 @@ It's a iOS App for real-time monitoring of the network speed, IP address, memory
 
 ![icon](Screenshots/icon.png)
 
-Device Support: 5s + & iOS 9.1 + Download: http://pre.im/cctv
+Device Support: 5s + & iOS 9.0 + & Apple Watch, Download: http://pre.im/cctv
 
 ### 我只想静静地看看截图 / Screenshots
-![1](Screenshots/1.png)
+![iPhone](Screenshots/iPhone.png)
 
-![2](Screenshots/2.png)
+### Apple Watch
 
-![3](Screenshots/3.png)
-
-![4](Screenshots/4.png)
+![Apple Watch](Screenshots/Apple Watch.png)

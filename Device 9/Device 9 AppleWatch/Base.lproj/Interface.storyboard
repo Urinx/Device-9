@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9046" systemVersion="15B30a" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9013"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Device_9_AppleWatch" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="iim-Oe-T7S">
+                            <items>
+                                <label width="7" height="40" alignment="left" id="Vx8-1g-xxV"/>
+                                <imageView width="33" height="33" alignment="left" verticalAlignment="center" image="cellular-watch" id="vkS-ug-D4w"/>
+                                <label width="5" height="40" alignment="left" id="GrV-XZ-VWH"/>
+                                <label width="73" height="40" alignment="left" verticalAlignment="center" text="0.0 MB  0.0 MB" textAlignment="left" numberOfLines="2" id="nuS-fY-WfP"/>
+                            </items>
+                            <variation key="device=watch42mm" alignment="center"/>
+                        </group>
+                        <group alignment="left" id="t2m-uB-WvA">
+                            <items>
+                                <label width="10" height="40" alignment="left" id="BZU-PO-ADX"/>
+                                <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="wifi-watch" id="jwc-nf-ScU"/>
+                                <label width="5" height="40" alignment="left" id="k1G-XG-thP"/>
+                                <label width="73" height="40" alignment="left" verticalAlignment="center" text="0.0 GB Unlimited" textAlignment="left" numberOfLines="2" id="rWw-ac-kzb"/>
+                            </items>
+                            <variation key="device=watch42mm" alignment="center"/>
+                        </group>
+                        <label width="1" alignment="left" text="Keep Using WiFi" textAlignment="center" id="AqO-d4-d27"/>
+                        <label width="1" alignment="left" text="(ง ˙o˙)ว" textAlignment="center" id="Wlp-Jg-6Y0">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Share To Friend" id="P3i-zK-oZv">
+                            <connections>
+                                <action selector="shareToFriend" destination="AgC-eL-Hgc" id="8ly-nt-vYs"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="AqO-d4-d27"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="AqO-d4-d27"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="cellularLB" destination="nuS-fY-WfP" id="y7u-B5-1Mq"/>
+                        <outlet property="wifiLB" destination="rWw-ac-kzb" id="5Cq-bp-nLe"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="320"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Device_9_AppleWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

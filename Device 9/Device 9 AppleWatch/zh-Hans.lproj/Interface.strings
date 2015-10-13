@@ -1,0 +1,18 @@
+
+/* Class = "WKInterfaceLabel"; text = "Keep Using WiFi"; ObjectID = "AqO-d4-d27"; */
+"AqO-d4-d27.text" = "生命不止，WiFi不停";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "IdU-wH-bcW"; */
+"IdU-wH-bcW.text" = "Alert Label";
+
+/* Class = "WKInterfaceButton"; title = "Share To Friend"; ObjectID = "P3i-zK-oZv"; */
+"P3i-zK-oZv.title" = "分享到微信";
+
+/* Class = "WKInterfaceLabel"; text = "(ง ˙o˙)ว"; ObjectID = "Wlp-Jg-6Y0"; */
+"Wlp-Jg-6Y0.text" = "(ง ˙o˙)ว";
+
+/* Class = "WKInterfaceLabel"; text = "0.0 MB  0.0 MB"; ObjectID = "nuS-fY-WfP"; */
+"nuS-fY-WfP.text" = "0.0 MB  0.0 MB";
+
+/* Class = "WKInterfaceLabel"; text = "0.0 GB Unlimited"; ObjectID = "rWw-ac-kzb"; */
+"rWw-ac-kzb.text" = "0.0 GB Unlimited";
