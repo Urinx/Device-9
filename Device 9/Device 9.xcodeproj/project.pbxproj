@@ -17,10 +17,17 @@
 		BB104DC61BABE12A00A6EF7D /* medium_battery.png in Resources */ = {isa = PBXBuildFile; fileRef = BB104DBF1BABE12A00A6EF7D /* medium_battery.png */; };
 		BB104DC71BABE12A00A6EF7D /* ssd-96.png in Resources */ = {isa = PBXBuildFile; fileRef = BB104DC01BABE12A00A6EF7D /* ssd-96.png */; };
 		BB104DC81BABE12A00A6EF7D /* touchscreen_smartphone-104.png in Resources */ = {isa = PBXBuildFile; fileRef = BB104DC11BABE12A00A6EF7D /* touchscreen_smartphone-104.png */; };
+		BB1857901C16CA430015898C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18578F1C16CA430015898C /* Constants.swift */; };
+		BB1857971C16D39B0015898C /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB382E561BB3E1E00056ED32 /* DeviceData.swift */; };
+		BB1857B61C16DC360015898C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1857A21C16DB7F0015898C /* NotificationCenter.framework */; };
+		BB1857B91C16DC360015898C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1857B81C16DC360015898C /* TodayViewController.swift */; };
+		BB1857BC1C16DC360015898C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1857BA1C16DC360015898C /* MainInterface.storyboard */; };
+		BB1857C01C16DC360015898C /* Device 9 TodayExtension2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB1857B51C16DC360015898C /* Device 9 TodayExtension2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB1857C71C16E68A0015898C /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1857C61C16E68A0015898C /* Bridging-Header.m */; };
+		BB1857C91C16E6A60015898C /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1857C81C16E6A60015898C /* DeviceData.swift */; };
 		BB382E551BB3E1D80056ED32 /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = BB382E541BB3E1D80056ED32 /* Bridging-Header.m */; };
-		BB382E571BB3E1E00056ED32 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB382E561BB3E1E00056ED32 /* DeviceData.swift */; };
 		BB458F401BAADCD100DD8F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB458F3F1BAADCD100DD8F83 /* AppDelegate.swift */; };
-		BB458F421BAADCD100DD8F83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB458F411BAADCD100DD8F83 /* ViewController.swift */; };
+		BB458F421BAADCD100DD8F83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB458F411BAADCD100DD8F83 /* MainViewController.swift */; };
 		BB458F451BAADCD100DD8F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB458F431BAADCD100DD8F83 /* Main.storyboard */; };
 		BB458F471BAADCD100DD8F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB458F461BAADCD100DD8F83 /* Assets.xcassets */; };
 		BB458F4A1BAADCD100DD8F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB458F481BAADCD100DD8F83 /* LaunchScreen.storyboard */; };
@@ -58,6 +65,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BB1857BE1C16DC360015898C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB458F341BAADCD100DD8F83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB1857B41C16DC360015898C;
+			remoteInfo = "Device 9 TodayExtension2";
+		};
 		BB458F511BAADCD100DD8F83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB458F341BAADCD100DD8F83 /* Project object */;
@@ -103,6 +117,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				BB458F7E1BAAE24A00DD8F83 /* Device 9 TodayExtension.appex in Embed App Extensions */,
+				BB1857C01C16DC360015898C /* Device 9 TodayExtension2.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,12 +157,21 @@
 		BB104DBF1BABE12A00A6EF7D /* medium_battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium_battery.png; sourceTree = "<group>"; };
 		BB104DC01BABE12A00A6EF7D /* ssd-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ssd-96.png"; sourceTree = "<group>"; };
 		BB104DC11BABE12A00A6EF7D /* touchscreen_smartphone-104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touchscreen_smartphone-104.png"; sourceTree = "<group>"; };
+		BB18578F1C16CA430015898C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB1857A21C16DB7F0015898C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		BB1857B51C16DC360015898C /* Device 9 TodayExtension2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Device 9 TodayExtension2.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1857B81C16DC360015898C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		BB1857BB1C16DC360015898C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BB1857BD1C16DC360015898C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1857C51C16E68A0015898C /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BB1857C61C16E68A0015898C /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
+		BB1857C81C16E6A60015898C /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
 		BB382E531BB3E1D80056ED32 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		BB382E541BB3E1D80056ED32 /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
 		BB382E561BB3E1E00056ED32 /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
 		BB458F3C1BAADCD100DD8F83 /* Device 9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device 9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB458F3F1BAADCD100DD8F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB458F411BAADCD100DD8F83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB458F411BAADCD100DD8F83 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BB458F441BAADCD100DD8F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB458F461BAADCD100DD8F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB458F491BAADCD100DD8F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -204,6 +228,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BB1857B21C16DC360015898C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1857B61C16DC360015898C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB458F391BAADCD100DD8F83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +299,27 @@
 			path = img;
 			sourceTree = "<group>";
 		};
+		BB1857A11C16DB7F0015898C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB1857A21C16DB7F0015898C /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB1857B71C16DC360015898C /* Device 9 TodayExtension2 */ = {
+			isa = PBXGroup;
+			children = (
+				BB1857C51C16E68A0015898C /* Bridging-Header.h */,
+				BB1857C61C16E68A0015898C /* Bridging-Header.m */,
+				BB1857C81C16E6A60015898C /* DeviceData.swift */,
+				BB1857B81C16DC360015898C /* TodayViewController.swift */,
+				BB1857BA1C16DC360015898C /* MainInterface.storyboard */,
+				BB1857BD1C16DC360015898C /* Info.plist */,
+			);
+			path = "Device 9 TodayExtension2";
+			sourceTree = "<group>";
+		};
 		BB458F331BAADCD100DD8F83 = {
 			isa = PBXGroup;
 			children = (
@@ -274,8 +327,10 @@
 				BB458F531BAADCD100DD8F83 /* Device 9Tests */,
 				BB458F5E1BAADCD100DD8F83 /* Device 9UITests */,
 				BB458F751BAAE24A00DD8F83 /* Device 9 TodayExtension */,
+				BB1857B71C16DC360015898C /* Device 9 TodayExtension2 */,
 				BB698F1E1BCC0CAB007A45A6 /* Device 9 AppleWatch */,
 				BB698F2D1BCC0CAB007A45A6 /* Device 9 AppleWatch Extension */,
+				BB1857A11C16DB7F0015898C /* Frameworks */,
 				BB458F3D1BAADCD100DD8F83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -289,6 +344,7 @@
 				BB458F711BAAE24A00DD8F83 /* Device 9 TodayExtension.appex */,
 				BB698F1D1BCC0CAB007A45A6 /* Device 9 AppleWatch.app */,
 				BB698F291BCC0CAB007A45A6 /* Device 9 AppleWatch Extension.appex */,
+				BB1857B51C16DC360015898C /* Device 9 TodayExtension2.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,14 +354,11 @@
 			children = (
 				BBB9067C1BAFD77500B53E33 /* Device 9.entitlements */,
 				BB382E561BB3E1E00056ED32 /* DeviceData.swift */,
+				BB18578F1C16CA430015898C /* Constants.swift */,
 				BB458F3F1BAADCD100DD8F83 /* AppDelegate.swift */,
-				BB458F411BAADCD100DD8F83 /* ViewController.swift */,
-				BBB906781BAFC0C900B53E33 /* SettingTableViewController.swift */,
-				BBB9067A1BAFCD3400B53E33 /* DataTableViewController.swift */,
+				BB458F411BAADCD100DD8F83 /* MainViewController.swift */,
+				BBE4EB861C16AF6100996937 /* Settings */,
 				BB458F431BAADCD100DD8F83 /* Main.storyboard */,
-				BBB9067E1BAFE4E400B53E33 /* HelpViewController.swift */,
-				BBB906801BAFFAD700B53E33 /* AboutViewController.swift */,
-				BBB906821BAFFC1400B53E33 /* WorksTableViewController.swift */,
 				BBA34C371BCA5AEB00AB1362 /* Supporting Files */,
 			);
 			path = "Device 9";
@@ -427,9 +480,38 @@
 			path = ../WeChatSDK_1.5;
 			sourceTree = "<group>";
 		};
+		BBE4EB861C16AF6100996937 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BBB906781BAFC0C900B53E33 /* SettingTableViewController.swift */,
+				BBB9067A1BAFCD3400B53E33 /* DataTableViewController.swift */,
+				BBB9067E1BAFE4E400B53E33 /* HelpViewController.swift */,
+				BBB906801BAFFAD700B53E33 /* AboutViewController.swift */,
+				BBB906821BAFFC1400B53E33 /* WorksTableViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BB1857B41C16DC360015898C /* Device 9 TodayExtension2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1857C11C16DC370015898C /* Build configuration list for PBXNativeTarget "Device 9 TodayExtension2" */;
+			buildPhases = (
+				BB1857B11C16DC360015898C /* Sources */,
+				BB1857B21C16DC360015898C /* Frameworks */,
+				BB1857B31C16DC360015898C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Device 9 TodayExtension2";
+			productName = "Device 9 TodayExtension2";
+			productReference = BB1857B51C16DC360015898C /* Device 9 TodayExtension2.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BB458F3B1BAADCD100DD8F83 /* Device 9 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB458F641BAADCD100DD8F83 /* Build configuration list for PBXNativeTarget "Device 9" */;
@@ -445,6 +527,7 @@
 			dependencies = (
 				BB458F7D1BAAE24A00DD8F83 /* PBXTargetDependency */,
 				BB698F3A1BCC0CAB007A45A6 /* PBXTargetDependency */,
+				BB1857BF1C16DC360015898C /* PBXTargetDependency */,
 			);
 			name = "Device 9";
 			productName = "Device 9";
@@ -544,9 +627,14 @@
 		BB458F341BAADCD100DD8F83 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Eular;
 				TargetAttributes = {
+					BB1857B41C16DC360015898C = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 952J324HNJ;
+					};
 					BB458F3B1BAADCD100DD8F83 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 952J324HNJ;
@@ -581,6 +669,7 @@
 					};
 					BB698F281BCC0CAB007A45A6 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 952J324HNJ;
 					};
 				};
 			};
@@ -602,6 +691,7 @@
 				BB458F4F1BAADCD100DD8F83 /* Device 9Tests */,
 				BB458F5A1BAADCD100DD8F83 /* Device 9UITests */,
 				BB458F701BAAE24A00DD8F83 /* Device 9 TodayExtension */,
+				BB1857B41C16DC360015898C /* Device 9 TodayExtension2 */,
 				BB698F1C1BCC0CAB007A45A6 /* Device 9 AppleWatch */,
 				BB698F281BCC0CAB007A45A6 /* Device 9 AppleWatch Extension */,
 			);
@@ -609,6 +699,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB1857B31C16DC360015898C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1857BC1C16DC360015898C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB458F3A1BAADCD100DD8F83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -672,18 +770,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB1857B11C16DC360015898C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1857C71C16E68A0015898C /* Bridging-Header.m in Sources */,
+				BB1857B91C16DC360015898C /* TodayViewController.swift in Sources */,
+				BB1857C91C16E6A60015898C /* DeviceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB458F381BAADCD100DD8F83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1857971C16D39B0015898C /* DeviceData.swift in Sources */,
 				BBB906881BB0458C00B53E33 /* Chart.swift in Sources */,
 				BBB906811BAFFAD700B53E33 /* AboutViewController.swift in Sources */,
 				BBB906831BAFFC1400B53E33 /* WorksTableViewController.swift in Sources */,
 				BBB906791BAFC0C900B53E33 /* SettingTableViewController.swift in Sources */,
 				BBB9067B1BAFCD3400B53E33 /* DataTableViewController.swift in Sources */,
-				BB382E571BB3E1E00056ED32 /* DeviceData.swift in Sources */,
 				BB382E551BB3E1D80056ED32 /* Bridging-Header.m in Sources */,
-				BB458F421BAADCD100DD8F83 /* ViewController.swift in Sources */,
+				BB1857901C16CA430015898C /* Constants.swift in Sources */,
+				BB458F421BAADCD100DD8F83 /* MainViewController.swift in Sources */,
 				BB458F401BAADCD100DD8F83 /* AppDelegate.swift in Sources */,
 				BBB9068A1BB0458C00B53E33 /* ChartSeries.swift in Sources */,
 				BBB9067F1BAFE4E400B53E33 /* HelpViewController.swift in Sources */,
@@ -730,6 +839,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BB1857BF1C16DC360015898C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB1857B41C16DC360015898C /* Device 9 TodayExtension2 */;
+			targetProxy = BB1857BE1C16DC360015898C /* PBXContainerItemProxy */;
+		};
 		BB458F521BAADCD100DD8F83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BB458F3B1BAADCD100DD8F83 /* Device 9 */;
@@ -758,6 +872,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		BB1857BA1C16DC360015898C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1857BB1C16DC360015898C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		BB458F431BAADCD100DD8F83 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -797,6 +919,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BB1857C21C16DC370015898C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Device 9 TodayExtension2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.Device-9-TodayExtension2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Device 9 TodayExtension2/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB1857C31C16DC370015898C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Device 9 TodayExtension2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.Device-9-TodayExtension2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Device 9 TodayExtension2/Bridging-Header.h";
+			};
+			name = Release;
+		};
 		BB458F621BAADCD100DD8F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -835,10 +990,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = "i386 arm64 armv7 armv7s";
+				VALID_ARCHS = "i386 arm64 armv7 armv7s armv7k";
 			};
 			name = Debug;
 		};
@@ -874,10 +1029,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "i386 arm64 armv7 armv7s";
+				VALID_ARCHS = "i386 arm64 armv7 armv7s armv7k";
 			};
 			name = Release;
 		};
@@ -1021,7 +1176,7 @@
 				IBSC_MODULE = Device_9_AppleWatch_Extension;
 				INFOPLIST_FILE = "Device 9 AppleWatch/Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1039,7 +1194,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Device_9_AppleWatch_Extension;
 				INFOPLIST_FILE = "Device 9 AppleWatch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1051,10 +1206,11 @@
 		BB698F3E1BCC0CAB007A45A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Device 9 AppleWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1066,9 +1222,10 @@
 		BB698F3F1BCC0CAB007A45A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Device 9 AppleWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.watchapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1080,6 +1237,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB1857C11C16DC370015898C /* Build configuration list for PBXNativeTarget "Device 9 TodayExtension2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1857C21C16DC370015898C /* Debug */,
+				BB1857C31C16DC370015898C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BB458F371BAADCD100DD8F83 /* Build configuration list for PBXProject "Device 9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

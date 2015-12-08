@@ -14,16 +14,10 @@ class HelpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         tryBtn.layer.borderColor = UIColor.whiteColor().CGColor
         tryBtn.layer.borderWidth = 1.0
         tryBtn.layer.cornerRadius = 6.0
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func back(sender: AnyObject) {

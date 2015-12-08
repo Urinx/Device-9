@@ -40,17 +40,12 @@ class SettingTableViewController: UITableViewController {
         if indexPath.section == 2 {
             var todo = ""
             if indexPath.row == 0 {
-                todo = "mailto://urinx@icloud.com"
+                todo = "mailto://\(AuthorEmail)"
             } else if indexPath.row == 1 {
-                todo = "sms://+8618827359451"
+                todo = "sms://\(AuthorMobile)"
             }
             UIApplication.sharedApplication().openURL(NSURL(string: todo)!)
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func prefersStatusBarHidden() -> Bool {

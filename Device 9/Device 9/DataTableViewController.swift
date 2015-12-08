@@ -14,7 +14,7 @@ class DataTableViewController: UITableViewController {
     @IBOutlet weak var totalTF: UITextField!
     @IBOutlet weak var usedTF: UITextField!
     
-    let defaults = NSUserDefaults(suiteName: "group.device9SharedDefaults")!
+    let defaults = NSUserDefaults(suiteName: UserDefaultSuiteName)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,11 +54,6 @@ class DataTableViewController: UITableViewController {
         defaults.setDouble(0, forKey: "CellularUsed")
         defaults.synchronize()
         update()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

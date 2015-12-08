@@ -10,52 +10,31 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBAction func goUrinx(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://urinx.github.io")!)
+        UIApplication.sharedApplication().openURL(NSURL(string: Urinx)!)
     }
     
-    @IBAction func weixinShare(sender: AnyObject) {
-        if WXApi.isWXAppInstalled() {
-            let message =  WXMediaMessage()
-            message.title = "超用心的誠意之作，讓通知中心變得從來沒有這麼好用"
-            message.setThumbImage(UIImage(named: "d9"))
-            let ext =  WXWebpageObject()
-            ext.webpageUrl = ArticleLink
-            message.mediaObject = ext
-            let req =  SendMessageToWXReq()
-            req.bText = false
-            req.message = message
-            req.scene = Int32(WXSceneTimeline.rawValue)
-            WXApi.sendReq(req)
-        } else {
-            let alert = UIAlertController(title: "Share Fail", message: "Wechat app is not installed!", preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-            presentViewController(alert, animated: true, completion: nil)
-        }
+    @IBAction func weixinShareTimeline(sender: AnyObject) {
+        weixinShare(WXSceneTimeline, title: WXShareDescription)
     }
     
     @IBAction func weixinShareFriend(sender: AnyObject) {
+        weixinShare(WXSceneSession, title: WXShareTitle)
+    }
+    
+    func weixinShare(scene: WXScene, title: String) {
         if WXApi.isWXAppInstalled() {
             let message =  WXMediaMessage()
-            message.title = "Device 9"
-            message.description = "超用心的誠意之作，讓通知中心變得從來沒有這麼好用"
+            message.title = title
+            message.description = WXShareDescription
             message.setThumbImage(UIImage(named: "d9"))
             let ext =  WXWebpageObject()
-            ext.webpageUrl = ArticleLink
+            ext.webpageUrl = AppDownload
             message.mediaObject = ext
             let req =  SendMessageToWXReq()
             req.bText = false
             req.message = message
-            req.scene = Int32(WXSceneSession.rawValue)
+            req.scene = Int32(scene.rawValue)
             WXApi.sendReq(req)
         } else {
             let alert = UIAlertController(title: "Share Fail", message: "Wechat app is not installed!", preferredStyle: .Alert)

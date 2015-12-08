@@ -10,6 +10,7 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
+    @IBOutlet weak var ssidLB: UILabel!
     
     @IBOutlet weak var storageLB: UILabel!
     @IBOutlet weak var batteryLB: UILabel!
@@ -19,25 +20,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var wifiLB: UILabel!
     @IBOutlet weak var uploadLb: UILabel!
     @IBOutlet weak var downloadLB: UILabel!
-    @IBOutlet weak var ipLB: UILabel!
-    @IBOutlet weak var wanLB: UILabel!
-    @IBOutlet weak var ipPositionLB: UILabel!
-    @IBOutlet weak var bssidLB: UILabel!
-    @IBOutlet weak var ssidLB: UILabel!
-    @IBOutlet weak var phoneLB: UILabel!
-    @IBOutlet weak var systemLB: UILabel!
-    @IBOutlet weak var appLB: UILabel!
-    @IBOutlet weak var uuidLB: UILabel!
     
     let deviceData = DeviceData()
     var timer: NSTimer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
         
         // 调整Widget的高度
-        self.preferredContentSize = CGSizeMake(0, 255)
+        self.preferredContentSize = CGSizeMake(0, 87)
         
         update()
         fresh()
@@ -51,11 +42,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidDisappear(animated: Bool) {
         timer.invalidate()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // 取消widget默认的inset，让应用靠左
@@ -112,25 +98,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
         }
         
-        if deviceData.network == .None {
-            ipLB.text = "无网络连接"
-        } else {
-            ipLB.text = "\(deviceData.ip!)"
-            if let wan = deviceData.wan {
-                wanLB.text = wan["ip"]
-                ipPositionLB.text = wan["pos"]
-            }
-        }
-        
-        // BSSID & SSID
-        bssidLB.text = "\(deviceData.BSSID)"
-        ssidLB.text = "\(deviceData.SSID)"
-        
-        // System Info
-        phoneLB.text = "\(deviceData.name)"
-        systemLB.text = "iOS \(deviceData.systemVersion)"
-        appLB.text = "\(deviceData.appNum)"
-        uuidLB.text = "\(deviceData.UUID)"
     }
     
     func fresh() {

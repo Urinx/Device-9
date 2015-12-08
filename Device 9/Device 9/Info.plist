@@ -95,7 +95,7 @@
 			<key>UIApplicationShortcutItemUserInfo</key>
 			<dict>
 				<key>info</key>
-				<string>setting</string>
+				<string>gotoSetting</string>
 			</dict>
 		</dict>
 		<dict>

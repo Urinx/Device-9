@@ -10,8 +10,6 @@ import UIKit
 import Foundation
 import CoreTelephony
 
-//let UserDefaultSuiteName = "group.device9SharedDefaults"
-
 class DeviceData {
     
     enum NetworkState {
@@ -22,7 +20,7 @@ class DeviceData {
     }
     
     struct DataFlow {
-        private let defaults = NSUserDefaults(suiteName: UserDefaultSuiteName)!
+        private let defaults = NSUserDefaults(suiteName: "group.device9SharedDefaults")!
         var upGPRS: Double = 0.0
         var upWiFi: Double = 0.0
         var downGPRS: Double = 0.0
