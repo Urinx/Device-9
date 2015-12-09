@@ -1036,6 +1036,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = "i386 arm64 armv7s armv7k armv7";
 			};
 			name = Debug;
 		};
@@ -1052,6 +1053,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				VALID_ARCHS = "i386 arm64 armv7s armv7k armv7";
 			};
 			name = Release;
 		};
@@ -1096,7 +1098,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = "i386 arm64 armv7 armv7s armv7k";
+				VALID_ARCHS = "i386 arm64 armv7s armv7k armv7";
 			};
 			name = Debug;
 		};
@@ -1135,7 +1137,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "i386 arm64 armv7 armv7s armv7k";
+				VALID_ARCHS = "i386 arm64 armv7s armv7k armv7";
 			};
 			name = Release;
 		};
@@ -1257,6 +1259,7 @@
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				VALID_ARCHS = "i386 arm64 armv7s armv7k armv7";
 			};
 			name = Debug;
 		};
@@ -1274,6 +1277,7 @@
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				VALID_ARCHS = "i386 arm64 armv7s armv7k armv7";
 			};
 			name = Release;
 		};
@@ -1348,6 +1352,7 @@
 		BBADFAEA1C17E61700B2AF9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1373,6 +1378,7 @@
 		BBADFAEB1C17E61700B2AF9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

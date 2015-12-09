@@ -11,8 +11,7 @@ import NotificationCenter
 import Device9Kit
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-    @IBOutlet weak var ssidLB: UILabel!
-    
+
     @IBOutlet weak var storageLB: UILabel!
     @IBOutlet weak var batteryLB: UILabel!
     @IBOutlet weak var batteryImg: UIImageView!
