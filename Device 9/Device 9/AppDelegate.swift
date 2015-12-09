@@ -16,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        // Weixin share
+        // Weixin SDK
         WXApi.registerApp(WXCode)
+        
+        // Pre SDK
+        let config = PreToolsConfig.defaultConfig()
+        config.enabledShakeReport = true
+        PreTools.init(PreAppKey, channel: "", config: config)
         
         // Active session
         if WCSession.isSupported() {

@@ -42,6 +42,11 @@
 		BB698F371BCC0CAB007A45A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB698F361BCC0CAB007A45A6 /* Assets.xcassets */; };
 		BB698F3B1BCC0CAB007A45A6 /* Device 9 AppleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BB698F1D1BCC0CAB007A45A6 /* Device 9 AppleWatch.app */; };
 		BB698F471BCCA1DA007A45A6 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB698F461BCCA1DA007A45A6 /* WatchConnectivity.framework */; };
+		BB8073A71C17FDA600A8AFD0 /* PreTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073A61C17FDA600A8AFD0 /* PreTools.framework */; };
+		BB8073A91C17FDFA00A8AFD0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073A81C17FDFA00A8AFD0 /* CoreTelephony.framework */; };
+		BB8073AB1C17FE6F00A8AFD0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073AA1C17FE6F00A8AFD0 /* ImageIO.framework */; };
+		BB8073AD1C17FE7E00A8AFD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073AC1C17FE7E00A8AFD0 /* QuartzCore.framework */; };
+		BB8073AF1C17FE8900A8AFD0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073AE1C17FE8900A8AFD0 /* AudioToolbox.framework */; };
 		BBADFAE41C17E61700B2AF9E /* Device9Kit.h in Headers */ = {isa = PBXBuildFile; fileRef = BBADFAE31C17E61700B2AF9E /* Device9Kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBADFAE81C17E61700B2AF9E /* Device9Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; };
 		BBADFAE91C17E61700B2AF9E /* Device9Kit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -214,6 +219,11 @@
 		BB698F381BCC0CAB007A45A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB698F451BCC29BE007A45A6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Interface.strings"; sourceTree = "<group>"; };
 		BB698F461BCCA1DA007A45A6 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		BB8073A61C17FDA600A8AFD0 /* PreTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PreTools.framework; sourceTree = "<group>"; };
+		BB8073A81C17FDFA00A8AFD0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BB8073AA1C17FE6F00A8AFD0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BB8073AC1C17FE7E00A8AFD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB8073AE1C17FE8900A8AFD0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BBA34C381BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BBA34C391BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		BBA34C3A1BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainInterface.strings"; sourceTree = "<group>"; };
@@ -257,12 +267,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8073AF1C17FE8900A8AFD0 /* AudioToolbox.framework in Frameworks */,
+				BB8073AD1C17FE7E00A8AFD0 /* QuartzCore.framework in Frameworks */,
+				BB8073AB1C17FE6F00A8AFD0 /* ImageIO.framework in Frameworks */,
+				BB8073A91C17FDFA00A8AFD0 /* CoreTelephony.framework in Frameworks */,
 				BB698F471BCCA1DA007A45A6 /* WatchConnectivity.framework in Frameworks */,
 				BBB906991BB052C100B53E33 /* libc++.1.dylib in Frameworks */,
 				BBADFAE81C17E61700B2AF9E /* Device9Kit.framework in Frameworks */,
 				BBB906A11BB0562A00B53E33 /* lWeChatSDK.a in Frameworks */,
 				BBB906971BB052A900B53E33 /* libsqlite3.dylib in Frameworks */,
 				BBB906951BB0528500B53E33 /* libz.1.dylib in Frameworks */,
+				BB8073A71C17FDA600A8AFD0 /* PreTools.framework in Frameworks */,
 				BBB906931BB0522B00B53E33 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +343,16 @@
 		BB1857A11C16DB7F0015898C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB8073B01C17FF1600A8AFD0 /* dylibs */,
+				BB458F731BAAE24A00DD8F83 /* NotificationCenter.framework */,
+				BBC89E231BADBDF000CE5BD6 /* MobileCoreServices.framework */,
+				BBB906921BB0522B00B53E33 /* SystemConfiguration.framework */,
+				BB698F461BCCA1DA007A45A6 /* WatchConnectivity.framework */,
+				BB8073A61C17FDA600A8AFD0 /* PreTools.framework */,
+				BB8073AE1C17FE8900A8AFD0 /* AudioToolbox.framework */,
+				BB8073AC1C17FE7E00A8AFD0 /* QuartzCore.framework */,
+				BB8073AA1C17FE6F00A8AFD0 /* ImageIO.framework */,
+				BB8073A81C17FDFA00A8AFD0 /* CoreTelephony.framework */,
 				BB1857A21C16DB7F0015898C /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -378,11 +403,11 @@
 			isa = PBXGroup;
 			children = (
 				BBB9067C1BAFD77500B53E33 /* Device 9.entitlements */,
+				BB458F431BAADCD100DD8F83 /* Main.storyboard */,
 				BB18578F1C16CA430015898C /* Constants.swift */,
 				BB458F3F1BAADCD100DD8F83 /* AppDelegate.swift */,
 				BB458F411BAADCD100DD8F83 /* MainViewController.swift */,
 				BBE4EB861C16AF6100996937 /* Settings */,
-				BB458F431BAADCD100DD8F83 /* Main.storyboard */,
 				BBA34C371BCA5AEB00AB1362 /* Supporting Files */,
 			);
 			path = "Device 9";
@@ -404,21 +429,6 @@
 				BB458F611BAADCD100DD8F83 /* Info.plist */,
 			);
 			path = "Device 9UITests";
-			sourceTree = "<group>";
-		};
-		BB458F721BAAE24A00DD8F83 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BBB906981BB052C100B53E33 /* libc++.1.dylib */,
-				BBB906961BB052A900B53E33 /* libsqlite3.dylib */,
-				BBB906941BB0528500B53E33 /* libz.1.dylib */,
-				BB698F461BCCA1DA007A45A6 /* WatchConnectivity.framework */,
-				BBB906921BB0522B00B53E33 /* SystemConfiguration.framework */,
-				BBC89E231BADBDF000CE5BD6 /* MobileCoreServices.framework */,
-				BB458F731BAAE24A00DD8F83 /* NotificationCenter.framework */,
-			);
-			name = Frameworks;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		BB458F751BAAE24A00DD8F83 /* Device 9 TodayExtension */ = {
@@ -464,10 +474,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BB8073B01C17FF1600A8AFD0 /* dylibs */ = {
+			isa = PBXGroup;
+			children = (
+				BBB906981BB052C100B53E33 /* libc++.1.dylib */,
+				BBB906961BB052A900B53E33 /* libsqlite3.dylib */,
+				BBB906941BB0528500B53E33 /* libz.1.dylib */,
+			);
+			name = dylibs;
+			sourceTree = "<group>";
+		};
 		BBA34C371BCA5AEB00AB1362 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BB458F721BAAE24A00DD8F83 /* Frameworks */,
 				BBB906841BB0458C00B53E33 /* Chart */,
 				BBB9069A1BB0562A00B53E33 /* WeChatSDK_1.5 */,
 				BB458F481BAADCD100DD8F83 /* LaunchScreen.storyboard */,
@@ -1129,6 +1148,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Device 9/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1153,6 +1176,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Device 9/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1449,6 +1476,7 @@
 				BBADFAEB1C17E61700B2AF9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

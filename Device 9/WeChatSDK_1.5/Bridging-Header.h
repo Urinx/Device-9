@@ -8,3 +8,4 @@
 
 #import <Foundation/Foundation.h>
 #import "WXApi.h"
+#import "PreTools/PreTools.h"
