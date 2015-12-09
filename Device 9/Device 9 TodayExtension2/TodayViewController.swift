@@ -8,13 +8,14 @@
 
 import UIKit
 import NotificationCenter
+import Device9Kit
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var ssidLB: UILabel!
     @IBOutlet weak var bssidLB: UILabel!
     @IBOutlet weak var ipLB: UILabel!
     
-    let deviceData = DeviceData()
+    let device9 = Device9()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,15 +32,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func update() {
-        if deviceData.network == .None {
+        if device9.network == .None {
             ipLB.text = "无网络连接"
         } else {
-            ipLB.text = "\(deviceData.ip!)"
+            ipLB.text = "\(device9.ip!)"
         }
         
         // BSSID & SSID
-        bssidLB.text = "\(deviceData.BSSID)"
-        ssidLB.text = "\(deviceData.SSID)"
+        bssidLB.text = "\(device9.BSSID)"
+        ssidLB.text = "\(device9.SSID)"
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {

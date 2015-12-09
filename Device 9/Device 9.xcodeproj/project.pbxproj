@@ -18,14 +18,10 @@
 		BB104DC71BABE12A00A6EF7D /* ssd-96.png in Resources */ = {isa = PBXBuildFile; fileRef = BB104DC01BABE12A00A6EF7D /* ssd-96.png */; };
 		BB104DC81BABE12A00A6EF7D /* touchscreen_smartphone-104.png in Resources */ = {isa = PBXBuildFile; fileRef = BB104DC11BABE12A00A6EF7D /* touchscreen_smartphone-104.png */; };
 		BB1857901C16CA430015898C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18578F1C16CA430015898C /* Constants.swift */; };
-		BB1857971C16D39B0015898C /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB382E561BB3E1E00056ED32 /* DeviceData.swift */; };
 		BB1857B61C16DC360015898C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1857A21C16DB7F0015898C /* NotificationCenter.framework */; };
 		BB1857B91C16DC360015898C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1857B81C16DC360015898C /* TodayViewController.swift */; };
 		BB1857BC1C16DC360015898C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1857BA1C16DC360015898C /* MainInterface.storyboard */; };
 		BB1857C01C16DC360015898C /* Device 9 TodayExtension2.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB1857B51C16DC360015898C /* Device 9 TodayExtension2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BB1857C71C16E68A0015898C /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1857C61C16E68A0015898C /* Bridging-Header.m */; };
-		BB1857C91C16E6A60015898C /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1857C81C16E6A60015898C /* DeviceData.swift */; };
-		BB382E551BB3E1D80056ED32 /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = BB382E541BB3E1D80056ED32 /* Bridging-Header.m */; };
 		BB458F401BAADCD100DD8F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB458F3F1BAADCD100DD8F83 /* AppDelegate.swift */; };
 		BB458F421BAADCD100DD8F83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB458F411BAADCD100DD8F83 /* MainViewController.swift */; };
 		BB458F451BAADCD100DD8F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB458F431BAADCD100DD8F83 /* Main.storyboard */; };
@@ -46,6 +42,13 @@
 		BB698F371BCC0CAB007A45A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB698F361BCC0CAB007A45A6 /* Assets.xcassets */; };
 		BB698F3B1BCC0CAB007A45A6 /* Device 9 AppleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BB698F1D1BCC0CAB007A45A6 /* Device 9 AppleWatch.app */; };
 		BB698F471BCCA1DA007A45A6 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB698F461BCCA1DA007A45A6 /* WatchConnectivity.framework */; };
+		BBADFAE41C17E61700B2AF9E /* Device9Kit.h in Headers */ = {isa = PBXBuildFile; fileRef = BBADFAE31C17E61700B2AF9E /* Device9Kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBADFAE81C17E61700B2AF9E /* Device9Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; };
+		BBADFAE91C17E61700B2AF9E /* Device9Kit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BBADFAEF1C17E6EB00B2AF9E /* Device9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADFAEE1C17E6EB00B2AF9E /* Device9.swift */; };
+		BBADFAF11C17E70100B2AF9E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = BBADFAF01C17E70100B2AF9E /* Network.h */; };
+		BBADFAF31C17E70900B2AF9E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = BBADFAF21C17E70900B2AF9E /* Network.m */; };
+		BBADFAF41C17EAE600B2AF9E /* Device9Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; };
 		BBB906791BAFC0C900B53E33 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB906781BAFC0C900B53E33 /* SettingTableViewController.swift */; };
 		BBB9067B1BAFCD3400B53E33 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB9067A1BAFCD3400B53E33 /* DataTableViewController.swift */; };
 		BBB9067F1BAFE4E400B53E33 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB9067E1BAFE4E400B53E33 /* HelpViewController.swift */; };
@@ -60,8 +63,6 @@
 		BBB906991BB052C100B53E33 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB906981BB052C100B53E33 /* libc++.1.dylib */; };
 		BBB906A11BB0562A00B53E33 /* lWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB9069B1BB0562A00B53E33 /* lWeChatSDK.a */; };
 		BBC89E1A1BAD024300CE5BD6 /* high_connection-96.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC89E191BAD024300CE5BD6 /* high_connection-96.png */; };
-		BBC89E201BAD3E5300CE5BD6 /* DeviceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC89E1F1BAD3E5300CE5BD6 /* DeviceData.swift */; };
-		BBC89E221BAD4C7400CE5BD6 /* Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC89E211BAD4C7400CE5BD6 /* Bridging-Header.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,13 @@
 			remoteGlobalIDString = BB698F1C1BCC0CAB007A45A6;
 			remoteInfo = "Device 9 AppleWatch";
 		};
+		BBADFAE61C17E61700B2AF9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB458F341BAADCD100DD8F83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBADFAE01C17E61700B2AF9E;
+			remoteInfo = Device9Kit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -144,6 +152,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBADFAED1C17E61700B2AF9E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBADFAE91C17E61700B2AF9E /* Device9Kit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -163,12 +182,7 @@
 		BB1857B81C16DC360015898C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		BB1857BB1C16DC360015898C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		BB1857BD1C16DC360015898C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB1857C51C16E68A0015898C /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		BB1857C61C16E68A0015898C /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
-		BB1857C81C16E6A60015898C /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
-		BB382E531BB3E1D80056ED32 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		BB382E541BB3E1D80056ED32 /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
-		BB382E561BB3E1E00056ED32 /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
+		BB382E531BB3E1D80056ED32 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../WeChatSDK_1.5/Bridging-Header.h"; sourceTree = "<group>"; };
 		BB458F3C1BAADCD100DD8F83 /* Device 9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device 9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB458F3F1BAADCD100DD8F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB458F411BAADCD100DD8F83 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +217,12 @@
 		BBA34C381BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BBA34C391BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		BBA34C3A1BCA5CEE00AB1362 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainInterface.strings"; sourceTree = "<group>"; };
+		BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Device9Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBADFAE31C17E61700B2AF9E /* Device9Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device9Kit.h; sourceTree = "<group>"; };
+		BBADFAE51C17E61700B2AF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBADFAEE1C17E6EB00B2AF9E /* Device9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device9.swift; sourceTree = "<group>"; };
+		BBADFAF01C17E70100B2AF9E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		BBADFAF21C17E70900B2AF9E /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		BBB906781BAFC0C900B53E33 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		BBB9067A1BAFCD3400B53E33 /* DataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
 		BBB9067C1BAFD77500B53E33 /* Device 9.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Device 9.entitlements"; sourceTree = "<group>"; };
@@ -221,9 +241,6 @@
 		BBB9069F1BB0562A00B53E33 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		BBB906A01BB0562A00B53E33 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		BBC89E191BAD024300CE5BD6 /* high_connection-96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "high_connection-96.png"; sourceTree = "<group>"; };
-		BBC89E1E1BAD3DD400CE5BD6 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		BBC89E1F1BAD3E5300CE5BD6 /* DeviceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceData.swift; sourceTree = "<group>"; };
-		BBC89E211BAD4C7400CE5BD6 /* Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header.m"; sourceTree = "<group>"; };
 		BBC89E231BADBDF000CE5BD6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -242,6 +259,7 @@
 			files = (
 				BB698F471BCCA1DA007A45A6 /* WatchConnectivity.framework in Frameworks */,
 				BBB906991BB052C100B53E33 /* libc++.1.dylib in Frameworks */,
+				BBADFAE81C17E61700B2AF9E /* Device9Kit.framework in Frameworks */,
 				BBB906A11BB0562A00B53E33 /* lWeChatSDK.a in Frameworks */,
 				BBB906971BB052A900B53E33 /* libsqlite3.dylib in Frameworks */,
 				BBB906951BB0528500B53E33 /* libz.1.dylib in Frameworks */,
@@ -267,11 +285,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBADFAF41C17EAE600B2AF9E /* Device9Kit.framework in Frameworks */,
 				BB458F741BAAE24A00DD8F83 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BB698F261BCC0CAB007A45A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBADFADD1C17E61700B2AF9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,9 +336,6 @@
 		BB1857B71C16DC360015898C /* Device 9 TodayExtension2 */ = {
 			isa = PBXGroup;
 			children = (
-				BB1857C51C16E68A0015898C /* Bridging-Header.h */,
-				BB1857C61C16E68A0015898C /* Bridging-Header.m */,
-				BB1857C81C16E6A60015898C /* DeviceData.swift */,
 				BB1857B81C16DC360015898C /* TodayViewController.swift */,
 				BB1857BA1C16DC360015898C /* MainInterface.storyboard */,
 				BB1857BD1C16DC360015898C /* Info.plist */,
@@ -330,6 +353,7 @@
 				BB1857B71C16DC360015898C /* Device 9 TodayExtension2 */,
 				BB698F1E1BCC0CAB007A45A6 /* Device 9 AppleWatch */,
 				BB698F2D1BCC0CAB007A45A6 /* Device 9 AppleWatch Extension */,
+				BBADFAE21C17E61700B2AF9E /* Device9Kit */,
 				BB1857A11C16DB7F0015898C /* Frameworks */,
 				BB458F3D1BAADCD100DD8F83 /* Products */,
 			);
@@ -345,6 +369,7 @@
 				BB698F1D1BCC0CAB007A45A6 /* Device 9 AppleWatch.app */,
 				BB698F291BCC0CAB007A45A6 /* Device 9 AppleWatch Extension.appex */,
 				BB1857B51C16DC360015898C /* Device 9 TodayExtension2.appex */,
+				BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -353,7 +378,6 @@
 			isa = PBXGroup;
 			children = (
 				BBB9067C1BAFD77500B53E33 /* Device 9.entitlements */,
-				BB382E561BB3E1E00056ED32 /* DeviceData.swift */,
 				BB18578F1C16CA430015898C /* Constants.swift */,
 				BB458F3F1BAADCD100DD8F83 /* AppDelegate.swift */,
 				BB458F411BAADCD100DD8F83 /* MainViewController.swift */,
@@ -401,9 +425,6 @@
 			isa = PBXGroup;
 			children = (
 				BBB9067D1BAFD7C800B53E33 /* Device 9 TodayExtension.entitlements */,
-				BBC89E1E1BAD3DD400CE5BD6 /* Bridging-Header.h */,
-				BBC89E211BAD4C7400CE5BD6 /* Bridging-Header.m */,
-				BBC89E1F1BAD3E5300CE5BD6 /* DeviceData.swift */,
 				BB458F761BAAE24A00DD8F83 /* TodayViewController.swift */,
 				BB458F781BAAE24A00DD8F83 /* MainInterface.storyboard */,
 				BB104DB21BABD50800A6EF7D /* img */,
@@ -450,10 +471,23 @@
 				BBB906841BB0458C00B53E33 /* Chart */,
 				BBB9069A1BB0562A00B53E33 /* WeChatSDK_1.5 */,
 				BB458F481BAADCD100DD8F83 /* LaunchScreen.storyboard */,
+				BB382E531BB3E1D80056ED32 /* Bridging-Header.h */,
 				BB458F461BAADCD100DD8F83 /* Assets.xcassets */,
 				BB458F4B1BAADCD100DD8F83 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBADFAE21C17E61700B2AF9E /* Device9Kit */ = {
+			isa = PBXGroup;
+			children = (
+				BBADFAE31C17E61700B2AF9E /* Device9Kit.h */,
+				BBADFAEE1C17E6EB00B2AF9E /* Device9.swift */,
+				BBADFAF01C17E70100B2AF9E /* Network.h */,
+				BBADFAF21C17E70900B2AF9E /* Network.m */,
+				BBADFAE51C17E61700B2AF9E /* Info.plist */,
+			);
+			path = Device9Kit;
 			sourceTree = "<group>";
 		};
 		BBB906841BB0458C00B53E33 /* Chart */ = {
@@ -473,8 +507,6 @@
 				BBB9069B1BB0562A00B53E33 /* lWeChatSDK.a */,
 				BBB9069F1BB0562A00B53E33 /* WXApi.h */,
 				BBB906A01BB0562A00B53E33 /* WXApiObject.h */,
-				BB382E531BB3E1D80056ED32 /* Bridging-Header.h */,
-				BB382E541BB3E1D80056ED32 /* Bridging-Header.m */,
 			);
 			name = WeChatSDK_1.5;
 			path = ../WeChatSDK_1.5;
@@ -493,6 +525,18 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BBADFADE1C17E61700B2AF9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBADFAE41C17E61700B2AF9E /* Device9Kit.h in Headers */,
+				BBADFAF11C17E70100B2AF9E /* Network.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BB1857B41C16DC360015898C /* Device 9 TodayExtension2 */ = {
@@ -521,6 +565,7 @@
 				BB458F3A1BAADCD100DD8F83 /* Resources */,
 				BB458F821BAAE24A00DD8F83 /* Embed App Extensions */,
 				BB698F431BCC0CAB007A45A6 /* Embed Watch Content */,
+				BBADFAED1C17E61700B2AF9E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -528,6 +573,7 @@
 				BB458F7D1BAAE24A00DD8F83 /* PBXTargetDependency */,
 				BB698F3A1BCC0CAB007A45A6 /* PBXTargetDependency */,
 				BB1857BF1C16DC360015898C /* PBXTargetDependency */,
+				BBADFAE71C17E61700B2AF9E /* PBXTargetDependency */,
 			);
 			name = "Device 9";
 			productName = "Device 9";
@@ -621,6 +667,24 @@
 			productReference = BB698F291BCC0CAB007A45A6 /* Device 9 AppleWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		BBADFAE01C17E61700B2AF9E /* Device9Kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBADFAEC1C17E61700B2AF9E /* Build configuration list for PBXNativeTarget "Device9Kit" */;
+			buildPhases = (
+				BBADFADC1C17E61700B2AF9E /* Sources */,
+				BBADFADD1C17E61700B2AF9E /* Frameworks */,
+				BBADFADE1C17E61700B2AF9E /* Headers */,
+				BBADFADF1C17E61700B2AF9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Device9Kit;
+			productName = Device9Kit;
+			productReference = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -671,6 +735,10 @@
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 952J324HNJ;
 					};
+					BBADFAE01C17E61700B2AF9E = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 952J324HNJ;
+					};
 				};
 			};
 			buildConfigurationList = BB458F371BAADCD100DD8F83 /* Build configuration list for PBXProject "Device 9" */;
@@ -694,6 +762,7 @@
 				BB1857B41C16DC360015898C /* Device 9 TodayExtension2 */,
 				BB698F1C1BCC0CAB007A45A6 /* Device 9 AppleWatch */,
 				BB698F281BCC0CAB007A45A6 /* Device 9 AppleWatch Extension */,
+				BBADFAE01C17E61700B2AF9E /* Device9Kit */,
 			);
 		};
 /* End PBXProject section */
@@ -767,6 +836,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBADFADF1C17E61700B2AF9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -774,9 +850,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1857C71C16E68A0015898C /* Bridging-Header.m in Sources */,
 				BB1857B91C16DC360015898C /* TodayViewController.swift in Sources */,
-				BB1857C91C16E6A60015898C /* DeviceData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,13 +858,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1857971C16D39B0015898C /* DeviceData.swift in Sources */,
 				BBB906881BB0458C00B53E33 /* Chart.swift in Sources */,
 				BBB906811BAFFAD700B53E33 /* AboutViewController.swift in Sources */,
 				BBB906831BAFFC1400B53E33 /* WorksTableViewController.swift in Sources */,
 				BBB906791BAFC0C900B53E33 /* SettingTableViewController.swift in Sources */,
 				BBB9067B1BAFCD3400B53E33 /* DataTableViewController.swift in Sources */,
-				BB382E551BB3E1D80056ED32 /* Bridging-Header.m in Sources */,
 				BB1857901C16CA430015898C /* Constants.swift in Sources */,
 				BB458F421BAADCD100DD8F83 /* MainViewController.swift in Sources */,
 				BB458F401BAADCD100DD8F83 /* AppDelegate.swift in Sources */,
@@ -821,8 +893,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB458F771BAAE24A00DD8F83 /* TodayViewController.swift in Sources */,
-				BBC89E201BAD3E5300CE5BD6 /* DeviceData.swift in Sources */,
-				BBC89E221BAD4C7400CE5BD6 /* Bridging-Header.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,6 +903,15 @@
 				BB698F351BCC0CAB007A45A6 /* NotificationController.swift in Sources */,
 				BB698F331BCC0CAB007A45A6 /* ExtensionDelegate.swift in Sources */,
 				BB698F311BCC0CAB007A45A6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBADFADC1C17E61700B2AF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBADFAF31C17E70900B2AF9E /* Network.m in Sources */,
+				BBADFAEF1C17E6EB00B2AF9E /* Device9.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +947,11 @@
 			isa = PBXTargetDependency;
 			target = BB698F1C1BCC0CAB007A45A6 /* Device 9 AppleWatch */;
 			targetProxy = BB698F391BCC0CAB007A45A6 /* PBXContainerItemProxy */;
+		};
+		BBADFAE71C17E61700B2AF9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBADFAE01C17E61700B2AF9E /* Device9Kit */;
+			targetProxy = BBADFAE61C17E61700B2AF9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -931,7 +1015,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.Device-9-TodayExtension2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Device 9 TodayExtension2/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -948,7 +1032,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.eular.Device-9.Device-9-TodayExtension2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Device 9 TodayExtension2/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -1145,7 +1229,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Device 9 TodayExtension/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -1162,7 +1246,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Device 9 TodayExtension/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -1234,6 +1318,55 @@
 			};
 			name = Release;
 		};
+		BBADFAEA1C17E61700B2AF9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Device9Kit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eular.Device9Kit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BBADFAEB1C17E61700B2AF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Device9Kit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eular.Device9Kit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1244,6 +1377,7 @@
 				BB1857C31C16DC370015898C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB458F371BAADCD100DD8F83 /* Build configuration list for PBXProject "Device 9" */ = {
 			isa = XCConfigurationList;
@@ -1307,6 +1441,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BBADFAEC1C17E61700B2AF9E /* Build configuration list for PBXNativeTarget "Device9Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBADFAEA1C17E61700B2AF9E /* Debug */,
+				BBADFAEB1C17E61700B2AF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

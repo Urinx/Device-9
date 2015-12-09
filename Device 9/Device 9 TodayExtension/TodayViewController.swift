@@ -8,6 +8,7 @@
 
 import UIKit
 import NotificationCenter
+import Device9Kit
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var ssidLB: UILabel!
@@ -21,7 +22,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var uploadLb: UILabel!
     @IBOutlet weak var downloadLB: UILabel!
     
-    let deviceData = DeviceData()
+    let device9 = Device9()
     var timer: NSTimer!
     
     override func viewDidLoad() {
@@ -35,8 +36,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     override func viewWillAppear(animated: Bool) {
-        if deviceData.network != .None {
-            timer = NSTimer.scheduledTimerWithTimeInterval(deviceData.dataFlow.dt, target: self, selector: "fresh", userInfo: nil, repeats: true)
+        if device9.network != .None {
+            timer = NSTimer.scheduledTimerWithTimeInterval(device9.dataFlow.dt, target: self, selector: "fresh", userInfo: nil, repeats: true)
         }
     }
     
@@ -61,8 +62,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func update() {
         // 储存
-        let storage = deviceData.systemFreeSize
-        let battery = deviceData.batteryLevel
+        let storage = device9.systemFreeSize
+        let battery = device9.batteryLevel
         if storage.GB < 1 {
             storageLB.text = "\(Int(storage.MB)) MB"
         } else if storage.GB > 10 {
@@ -75,7 +76,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         if battery > 0 {
             batteryLB.text = "\(Int(battery * 100)) %"
             
-            switch deviceData.batteryState {
+            switch device9.batteryState {
             case .Unknown:
                 break
             case .Unplugged:
@@ -101,17 +102,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func fresh() {
-        deviceData.dataFlow.update()
-        let upSpeed = deviceData.dataFlow.upSpeed
-        let downSpeed = deviceData.dataFlow.downSpeed
+        device9.dataFlow.update()
+        let upSpeed = device9.dataFlow.upSpeed
+        let downSpeed = device9.dataFlow.downSpeed
         
         // 流量数据
-        let usedDataMB = deviceData.cellularUsedData.MB
+        let usedDataMB = device9.cellularUsedData.MB
         usedDataLB.text = "\(usedDataMB.afterPoint(1)) MB"
-        leftDataLB.text = "\((deviceData.cellularTotalData.MB - usedDataMB).afterPoint(1)) MB"
+        leftDataLB.text = "\((device9.cellularTotalData.MB - usedDataMB).afterPoint(1)) MB"
             
         // WIFI数据
-        let wifi = deviceData.wifiUsedData
+        let wifi = device9.wifiUsedData
         if wifi.GB > 1 {
             wifiLB.text = "\(wifi.GB.afterPoint(2)) GB"
         } else {

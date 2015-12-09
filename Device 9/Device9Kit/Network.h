@@ -7,17 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <ifaddrs.h>
 #include <sys/socket.h>
 #include <net/if.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 #include <objc/runtime.h>
+#import <ifaddrs.h>
+#import <arpa/inet.h>
+#import <NetworkExtension/NEHotspotHelper.h>
 
-@interface ObjC : NSObject
-
+@interface Network : NSObject
 -(NSString*) SSID;
 -(NSString*) BSSID;
-- (NSArray*) getAppList;
+-(NSArray*) getAppList;
 -(NSDictionary*) getDataFlowBytes;
-
+-(NSString*) getIPAddress;
 @end

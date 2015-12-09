@@ -9,26 +9,27 @@
 import UIKit
 import Foundation
 import CoreTelephony
+import SystemConfiguration.CaptiveNetwork
 
-class DeviceData {
+public class Device9 {
     
-    enum NetworkState {
+    public enum NetworkState {
         case None
         case WIFI
         case Cellular
         case Connected
     }
     
-    struct DataFlow {
+    public struct DataFlow {
         private let defaults = NSUserDefaults(suiteName: "group.device9SharedDefaults")!
-        var upGPRS: Double = 0.0
-        var upWiFi: Double = 0.0
-        var downGPRS: Double = 0.0
-        var downWiFi: Double = 0.0
-        var upSpeed: Double = 0.0
-        var downSpeed: Double = 0.0
-        var dt = 1.0
-        var cellularUsed: Double {
+        public var upGPRS: Double = 0.0
+        public var upWiFi: Double = 0.0
+        public var downGPRS: Double = 0.0
+        public var downWiFi: Double = 0.0
+        public var upSpeed: Double = 0.0
+        public var downSpeed: Double = 0.0
+        public var dt = 1.0
+        public var cellularUsed: Double {
             set {
                 defaults.setDouble(newValue, forKey: "CellularUsed")
                 defaults.synchronize()
@@ -37,7 +38,7 @@ class DeviceData {
                 return defaults.doubleForKey("CellularUsed")
             }
         }
-        var wifiUsed: Double {
+        public var wifiUsed: Double {
             set {
                 defaults.setDouble(newValue, forKey: "WiFiUsed")
                 defaults.synchronize()
@@ -49,7 +50,7 @@ class DeviceData {
         
         init() {
             
-            let data = ObjC().getDataFlowBytes()
+            let data = Network().getDataFlowBytes()
             upWiFi = data["WiFiSent"] as! Double
             downWiFi = data["WiFiReceived"] as! Double
             upGPRS = data["WWANSent"] as! Double
@@ -57,13 +58,13 @@ class DeviceData {
             
         }
         
-        mutating func update() {
+        public mutating func update() {
             let up1 = upGPRS + upWiFi
             let down1 = downGPRS + downWiFi
             let cell1 = upGPRS + downGPRS
             let wifi1 = upWiFi + downWiFi
             
-            let data = ObjC().getDataFlowBytes()
+            let data = Network().getDataFlowBytes()
             upWiFi = data["WiFiSent"] as! Double
             downWiFi = data["WiFiReceived"] as! Double
             upGPRS = data["WWANSent"] as! Double
@@ -83,32 +84,29 @@ class DeviceData {
     }
     
     let device = UIDevice.currentDevice()
-    var dataFlow = DataFlow()
+    public var dataFlow = DataFlow()
     
     
-    var systemFreeSize: Double {
+    public var systemFreeSize: Double {
         let fm = NSFileManager.defaultManager()
         let fattributes = try! fm.attributesOfFileSystemForPath(NSHomeDirectory())
         return fattributes["NSFileSystemFreeSize"] as! Double
     }
     
-    var batteryLevel: Float {
+    public var batteryLevel: Float {
         return device.batteryLevel
     }
     
-    var batteryState: UIDeviceBatteryState{
+    public var batteryState: UIDeviceBatteryState{
         return device.batteryState
     }
     
-    var ip: String? {
-        let ipAddr = getIFAddresses()
-        if ipAddr.count > 0 {
-            return ipAddr[0]
-        }
-        return nil
+    public var ip: String? {
+        let ipAddr = Network().getIPAddress()
+        return ipAddr != "error" ? ipAddr : nil
     }
     
-    var wan: [String: String]? {
+    public var wan: [String: String]? {
         let url = NSURL(string: "http://1111.ip138.com/ic.asp")
         let gb2312 = CFStringConvertEncodingToNSStringEncoding(0x0632)
         do {
@@ -123,7 +121,7 @@ class DeviceData {
     }
     
     // Network
-    var network: NetworkState {
+    public var network: NetworkState {
         if self.ip != nil {
             return .Connected
         }
@@ -131,45 +129,45 @@ class DeviceData {
     }
     
     // WIFI
-    var SSID: String {
-        return ObjC().SSID()
+    public var SSID: String {
+        return Network().SSID()
     }
     
-    var BSSID: String {
-        return ObjC().BSSID()
+    public var BSSID: String {
+        return Network().BSSID()
     }
     
-    var cellularUsedData: Double {
+    public var cellularUsedData: Double {
         return dataFlow.cellularUsed
     }
     
-    var cellularTotalData: Double {
+    public var cellularTotalData: Double {
         return NSUserDefaults(suiteName: "group.device9SharedDefaults")!.doubleForKey("CellularTotal")
     }
     
-    var wifiUsedData: Double {
+    public var wifiUsedData: Double {
         return dataFlow.wifiUsed
     }
     
-    var mobileTemperature: Double {
+    public var mobileTemperature: Double {
         return 30.0
     }
     
-    var UUID: String {
+    public var UUID: String {
         return device.identifierForVendor!.UUIDString
     }
     
-    var name: String {
+    public var name: String {
         return device.name
     }
     
-    var systemVersion: String {
+    public var systemVersion: String {
         return device.systemVersion
     }
     
-    var app: Array<String> {
+    public var app: Array<String> {
         var appList = [String]()
-        for app in ObjC().getAppList() {
+        for app in Network().getAppList() {
             let BundleID = String(app).split(" ")[2]
             if !BundleID.hasPrefix("com.apple") {
                 appList.append(BundleID)
@@ -178,15 +176,34 @@ class DeviceData {
         return appList
     }
     
-    var appNum: Int {
+    public var appNum: Int {
         return app.count
     }
     
-    init() {
+    public init() {
         device.batteryMonitoringEnabled = true
     }
+    /*
+    // iOS 9 以下
+    func fetchSSIDInfo() -> String? {
+        if let
+            ifs = CNCopySupportedInterfaces() as? [String],
+            ifName = ifs.first,
+            info = CNCopyCurrentNetworkInfo((ifName as CFStringRef))
+        {
+            if let
+                ssidInfo = info as? [String:AnyObject],
+                ssid = ssidInfo["SSID"] as? String
+            {
+                return ssid
+            }
+        }
+        return nil
+    }
+    */
 }
 
+/*
 // add to swift bridge #include <ifaddrs.h>
 func getIFAddresses() -> [String] {
     var addresses = [String]()
@@ -219,8 +236,11 @@ func getIFAddresses() -> [String] {
     }
     return addresses
 }
+*/
 
-extension Double {
+
+// Some Useful extensions
+public extension Double {
     var KB: Double {
         return self / 1024
     }
@@ -239,7 +259,7 @@ extension Double {
     }
 }
 
-extension String {
+public extension String {
     func split(separator: String) -> [String] {
         return self.componentsSeparatedByString(separator)
     }

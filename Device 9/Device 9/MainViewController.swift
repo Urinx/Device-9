@@ -8,6 +8,7 @@
 
 import UIKit
 import WatchConnectivity
+import Device9Kit
 
 class MainViewController: UIViewController {
     
@@ -16,7 +17,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var shareCBtn: UIButton!
     @IBOutlet weak var dataLB: UILabel!
     let defaults = NSUserDefaults(suiteName: UserDefaultSuiteName)!
-    let deviceData = DeviceData()
+    let device9 = Device9()
     var totalStr = ""
     
     override func viewDidLoad() {
@@ -56,8 +57,8 @@ class MainViewController: UIViewController {
             defaults.synchronize()
             
             // set initial data
-            deviceData.dataFlow.cellularUsed = deviceData.dataFlow.upGPRS + deviceData.dataFlow.downGPRS
-            deviceData.dataFlow.wifiUsed = deviceData.dataFlow.upWiFi + deviceData.dataFlow.downWiFi
+            device9.dataFlow.cellularUsed = device9.dataFlow.upGPRS + device9.dataFlow.downGPRS
+            device9.dataFlow.wifiUsed = device9.dataFlow.upWiFi + device9.dataFlow.downWiFi
         }
         
         updateUI()
