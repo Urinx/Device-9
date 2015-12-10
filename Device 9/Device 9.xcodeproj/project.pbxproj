@@ -42,6 +42,8 @@
 		BB698F371BCC0CAB007A45A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB698F361BCC0CAB007A45A6 /* Assets.xcassets */; };
 		BB698F3B1BCC0CAB007A45A6 /* Device 9 AppleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BB698F1D1BCC0CAB007A45A6 /* Device 9 AppleWatch.app */; };
 		BB698F471BCCA1DA007A45A6 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB698F461BCCA1DA007A45A6 /* WatchConnectivity.framework */; };
+		BB71888B1C196CBE000DF38E /* Device9Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; };
+		BB71888C1C196EE5000DF38E /* Device9Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; };
 		BB8073A71C17FDA600A8AFD0 /* PreTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073A61C17FDA600A8AFD0 /* PreTools.framework */; };
 		BB8073A91C17FDFA00A8AFD0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073A81C17FDFA00A8AFD0 /* CoreTelephony.framework */; };
 		BB8073AB1C17FE6F00A8AFD0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8073AA1C17FE6F00A8AFD0 /* ImageIO.framework */; };
@@ -53,7 +55,6 @@
 		BBADFAEF1C17E6EB00B2AF9E /* Device9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADFAEE1C17E6EB00B2AF9E /* Device9.swift */; };
 		BBADFAF11C17E70100B2AF9E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = BBADFAF01C17E70100B2AF9E /* Network.h */; };
 		BBADFAF31C17E70900B2AF9E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = BBADFAF21C17E70900B2AF9E /* Network.m */; };
-		BBADFAF41C17EAE600B2AF9E /* Device9Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBADFAE11C17E61700B2AF9E /* Device9Kit.framework */; };
 		BBB906791BAFC0C900B53E33 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB906781BAFC0C900B53E33 /* SettingTableViewController.swift */; };
 		BBB9067B1BAFCD3400B53E33 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB9067A1BAFCD3400B53E33 /* DataTableViewController.swift */; };
 		BBB9067F1BAFE4E400B53E33 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB9067E1BAFE4E400B53E33 /* HelpViewController.swift */; };
@@ -259,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB71888B1C196CBE000DF38E /* Device9Kit.framework in Frameworks */,
 				BB1857B61C16DC360015898C /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +302,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBADFAF41C17EAE600B2AF9E /* Device9Kit.framework in Frameworks */,
+				BB71888C1C196EE5000DF38E /* Device9Kit.framework in Frameworks */,
 				BB458F741BAAE24A00DD8F83 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
